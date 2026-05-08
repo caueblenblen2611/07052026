@@ -37,6 +37,24 @@ Sistema para gerenciamento de uma rede de cinemas, permitindo o controle de film
 - Cada sessão está vinculada a um único filme  
 - Um cinema pode possuir várias sessões e filmes  
 
+ RF — Requisitos Funcionais
+RF01 – Permitir cadastrar cinemas
+RF02 – Permitir cadastrar filmes
+RF03 – Permitir cadastrar sessões
+RF04 – Permitir registrar público em uma sessão
+RF05 – Permitir consultar filmes em cartaz
+RF06 – Permitir visualizar total de público por sessão
+RF07 – Permitir visualizar total de público por filme
+RF08 – Permitir listar sessões por cinema
+ RN — Regras de Negócio
+RN01 – A duração da sessão deve respeitar o tempo do filme
+RN02 – Deve existir intervalo mínimo entre sessões
+RN03 – O público registrado não pode exceder a capacidade do cinema
+RN04 – Cada sessão pertence a um único filme
+RN05 – Cada sessão pertence a um único cinema
+RN06 – Um cinema pode possuir várias sessões simultâneas
+RN07 – Não é permitido registrar público em sessão inexistente
+RN08 – O público total de uma sessão deve ser atualizado a cada registro
 ---
 
 ##  Diagrama de Casos de Uso
