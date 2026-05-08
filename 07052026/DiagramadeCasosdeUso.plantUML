@@ -1,0 +1,21 @@
+@startuml  
+left to right direction
+
+actor "Funcionário" as Func
+actor "Administrador" as Admin
+actor "Espectador" as Esp
+
+rectangle "Sistema de Cinemas" {
+
+  Func --> (Cadastrar Cinema)
+  Func --> (Cadastrar Filme)
+  Func --> (Cadastrar Sessão)
+  Func --> (Registrar Público)
+  Func --> (Consultar Relatórios)
+
+  Admin --> (Gerenciar Sistema)
+
+  Esp --> (Consultar Filmes em Cartaz)
+}
+
+@enduml

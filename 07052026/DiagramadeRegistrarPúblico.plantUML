@@ -1,0 +1,16 @@
+@startuml  
+start
+
+:Selecionar sessão;
+:Informar quantidade de público;
+:Verificar capacidade do cinema;
+
+if (Capacidade suficiente?) then (Sim)
+  :Registrar público;
+  :Atualizar total da sessão;
+else (Não)
+  :Exibir erro;
+endif
+
+stop
+@enduml

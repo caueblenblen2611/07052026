@@ -1,0 +1,27 @@
+@startuml  
+
+class Cinema {
+  id
+  nome
+  endereco
+  capacidade
+}
+
+class Filme {
+  id
+  titulo
+  duracao
+  genero
+  diretor
+}
+
+class Sessao {
+  id
+  horario
+  publico
+}
+
+Cinema "1" --> "0..*" Sessao
+Filme "1" --> "0..*" Sessao
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml  
+start
+
+:Selecionar filme;
+:Definir horário;
+:Verificar disponibilidade;
+
+if (Disponível?) then (Sim)
+  :Cadastrar sessão;
+else (Não)
+  :Exibir erro;
+endif
+
+stop
+@enduml

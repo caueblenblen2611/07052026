@@ -1,0 +1,16 @@
+@startuml  
+
+actor Usuario
+
+Usuario -> View : solicitar cadastro de sessão
+View -> Controller : enviar dados
+Controller -> Service : criarSessao()
+
+Service -> Repository : salvarSessao()
+Repository -> Banco : INSERT
+
+Service --> Controller : sucesso
+Controller --> View : resposta
+View --> Usuario : confirmação
+
+@enduml
